@@ -1,0 +1,142 @@
+.container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff; /* 흰 배경 */
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+  border: 2px solid #000000; /* 검정 테두리 */
+}
+
+.container input[type='text'],
+.container textarea,
+.write-box input,
+.write-box textarea,
+.comment-write textarea {
+  width: 95%;
+  padding: 13px 12px;
+  margin-bottom: 12px;
+  border: 1.5px solid #000000; /* 검정 테두리 */
+  border-radius: 8px;
+  font-size: 1.05rem;
+  background: #f9f9f9; /* 밝은 회색 배경 */
+  color: #18141b;
+  transition: border 0.14s, background 0.14s;
+}
+
+.container input[type='text']:focus,
+.container textarea:focus,
+.write-box input:focus,
+.write-box textarea:focus,
+.comment-write textarea:focus {
+  border: 1.5px solid #26a69a;
+  background: #ffffff;
+  outline: none;
+}
+
+.container button,
+.write-box button,
+.post-item button,
+.comment-write button {
+  background: #26a69a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.container button:hover,
+.write-box button:hover,
+.post-item button:hover,
+.comment-write button:hover {
+  background: #2bbbad;
+  color: #000000;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #26a69a;
+  margin-bottom: 24px;
+}
+
+h3,
+h4 {
+  color: #18141b;
+  margin-bottom: 10px;
+}
+
+/* 게시글 목록 */
+.post-list {
+  margin-top: 20px;
+}
+
+.post-item {
+  padding: 16px;
+  margin-bottom: 14px;
+  border: 1.5px solid #000000; /* 검정 테두리 */
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.post-box {
+  padding: 18px;
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* 댓글 */
+.comment-item {
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.comment-item button {
+  margin-right: 8px;
+  background: #e0f7f5;
+  color: #18141b;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.comment-item button:hover {
+  background: #c3ece9;
+}
+
+/* 메시지 */
+.message {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.message.success {
+  background: #e4f7ec;
+  color: #2d7d46;
+}
+
+.message.error {
+  background: #fbe7e7;
+  color: #c32c2c;
+}
+
+/* 공통 버튼 */
+button {
+  font-family: inherit;
+}
